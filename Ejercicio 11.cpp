@@ -52,12 +52,18 @@ public:
 };
 
 int main(){
-    int z;
+   int z;
     cout<<"Ingrese un numero: "; cin>>z;
-    cifras n(z);
-    n.contarcifras();
-    n.guardar_digitos();
-    cout<<"La suma de los digitos de "<<z<<" es: "<<n.suma_digitos()<<endl;
-    n.multiplo();
+    if(z>=10000 || z<=-10000){
+        cout<<"Debe digitar un numero de 4 digitos o menos";
+        exit(0);
+    }
+    else{
+        cifras n(z);
+        n.contarcifras();
+        n.guardar_digitos();
+        cout<<"La suma de los digitos de "<<z<<" es: "<<n.suma_digitos()<<endl;
+        n.multiplo();
+    }
     return 0;
 }
