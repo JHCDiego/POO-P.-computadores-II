@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 class Rectangulo{
@@ -26,8 +27,8 @@ public:
                  }
     }
     void Area(){
-        base = V_x[1]-V_x[0];
-        altura = V_y[2]-V_y[0];
+        base = abs(V_x[1]-V_x[0]);
+        altura = abs(V_y[2]-V_y[0]);
         cout<<"\n";
         cout<<"El area de su rectangulo es: "<<base*altura<<endl;
     }
