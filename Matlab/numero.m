@@ -1,3 +1,4 @@
+%Ejercicio 11
 classdef numero
     properties
         num = 0;
