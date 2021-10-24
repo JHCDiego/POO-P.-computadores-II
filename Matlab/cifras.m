@@ -1,3 +1,4 @@
+%Ejercicio 10
 classdef cifras < handle
     properties
         suma = 0;
