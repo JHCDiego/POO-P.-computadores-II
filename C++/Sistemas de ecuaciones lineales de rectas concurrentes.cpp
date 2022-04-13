@@ -20,7 +20,7 @@ void Datosmatriz(){
     cout<<"\nDIGITE LOS COEFICIENTES DE SU SISTEMA LINEAL "<<n<<" x "<<n+1<<endl;
     for(i=0;i<n;i++){
         for(j=0;j<n+1;j++){
-            cout<<"a_"<<"["<<i<<"]["<<j<<"] = ";
+            cout<<"a_"<<"["<<i+1<<"]["<<j+1<<"] = ";
             cin>>Matriz[i][j];
         }
         cout<<"\n";
@@ -89,7 +89,7 @@ void Algoritmo(){
     cout<<"LAS SOLUCIONES DE SU SISTEMA LINEAL DE "<<n<<" ECUACIONES Y "<<n<<" INCOGNITAS SON: ";
     cout<<"\n";
     for(i=0;i<n;i++){
-        cout<<"s["<<i<<"] = "<<s[i]<<endl;
+        cout<<"x["<<i+1<<"] = "<<s[i]<<endl;
     }
     cout<<"\nPROGRAMA FINALIZADO CORRECTAMENTE";
 
