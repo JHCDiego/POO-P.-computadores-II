@@ -14,7 +14,7 @@ void Datosmatriz(){
     cout<<"ESCRIBA EL VALOR DE n DE SU MATRIZ AUMENTADA n x (n+1)"<<endl;
     cout<<"n = "; cin>>n;
     Matriz = new double*[n];
-    for(i=0;i<n+1;i++){
+    for(i=0;i<n;i++){
         Matriz[i] = new double[n+1];
     }
     cout<<"\nDIGITE LOS COEFICIENTES DE SU SISTEMA LINEAL "<<n<<" x "<<n+1<<endl;
@@ -95,7 +95,7 @@ void Algoritmo(){
 
 }
 void Liberarmemoria(){
-for(i=0;i<n+1;i++){
+for(i=0;i<n;i++){
     delete[] Matriz[i];
 }
 delete[] Matriz;
