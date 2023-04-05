@@ -1,4 +1,4 @@
-#Pre√°mbulo#
+#Pre√É¬°mbulo#
 library(foreign)
 library(xtable)
 
@@ -34,11 +34,11 @@ print(xtable(Tabla),include.rownames = TRUE)
 DATA <- hist(Estudiantes, main = "IQ de estudiantes", xlab = "Coeficiente intelectual", ylab = "Frecuencia", col = "white",
              breaks = A,xlim = c(80,150),ylim = c(0,15),right = FALSE, plot = TRUE)
 
-#Media aritmÈtica de Estudiantes
+#Media aritm√©tica de Estudiantes
 x_avge <- mean(Estudiantes)
 x_avge
 
-#Coeficiente de variaciÛn de Pearson
+#Coeficiente de variaci√≥n de Pearson
 CV <- function(X,M){
   #X - Datos
   #M - Medida de tendencia central a analizar
@@ -53,7 +53,7 @@ N_i <- cumsum(DATA$counts)
 n_2 <- length(Estudiantes)/2
 #Intervalo mediano
 indice_imediano <- which(N_i >= n_2)[1]
-#C·lculo de la mediana
+#C√°lculo de la mediana
 
 L_i <- DATA$breaks[indice_imediano]
 a_i <- diff(DATA$breaks)[indice_imediano]
@@ -71,13 +71,13 @@ n_i <- DATA$counts[indice_imodal]
 n_i_ant <-  DATA$counts[indice_imodal-1]
 n_i_sig <-  DATA$counts[indice_imodal+1]
 a_i <- diff(DATA$breaks)[indice_imodal]
-#C·lculo de moda
+#C√°lculo de moda
 x_mda <- L_i+((n_i-n_i_ant)/((n_i-n_i_ant)+(n_i-n_i_sig)))*a_i
 #Moda
 x_mda
 
 
-#DistribuciÛn normal
+#Distribuci√≥n normal
 
 Estudiantes <- c(82,96,99,102,103,103,106,107, 108,108,108,
                  108,109,110,110,111,113,113,113,113,115,115,
@@ -95,6 +95,9 @@ y <- dnorm(x, mean(Estudiantes), sd(Estudiantes)) * diff(DATA$mids)[1] * length(
 plot(DATA, main = "IQ de estudiantes",ylab = "Frecuencia", col = "lightblue", xlim = c(80, 150), ylim = c(0,15))
 lines(x, y, col = "red", lwd = 2)
 
+
+
+Holaaa
 
 
 
