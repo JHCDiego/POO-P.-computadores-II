@@ -30,10 +30,6 @@ Tabla
 print(xtable(Tabla),include.rownames = TRUE)
 
 
-#Histograma
-DATA <- hist(Estudiantes, main = "IQ de estudiantes", xlab = "Coeficiente intelectual", ylab = "Frecuencia", col = "white",
-             breaks = A,xlim = c(80,150),ylim = c(0,15),right = FALSE, plot = TRUE)
-
 #Histograma con colores
 DATA <- hist(Estudiantes, main = "IQ de estudiantes", xlab = "Coeficiente intelectual", ylab = "Frecuencia", col = c( "purple","red","yellow","blue","green","cyan"),
              breaks = A,xlim = c(80,150),ylim = c(0,15),right = FALSE, plot = TRUE)
