@@ -95,9 +95,19 @@ y <- dnorm(x, mean(Estudiantes), sd(Estudiantes)) * diff(DATA$mids)[1] * length(
 plot(DATA, main = "IQ de estudiantes",ylab = "Frecuencia", col = "lightblue", xlim = c(80, 150), ylim = c(0,15))
 lines(x, y, col = "red", lwd = 2)
 
+#Rango intercuartilico
+quantile(Estudiantes)
+IQR(Estudiantes)
 
 
-Holaaa
+#Diagrama de caja y bigotes
+
+#vertical
+boxplot(Estudiantes, main = "Gráfico de bigotes", ylab = "Puntuación")
+
+#horizontal
+boxplot(Estudiantes, main = "Gráfico de bigotes", xlab = "Puntuación", horizontal = TRUE)
+
 
 
 
