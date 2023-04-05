@@ -102,9 +102,6 @@ IQR(Estudiantes)
 
 #Diagrama de caja y bigotes
 
-#vertical
-boxplot(Estudiantes, main = "Gráfico de bigotes", ylab = "Puntuación")
-
 #horizontal
 boxplot(Estudiantes, main = "Gráfico de bigotes", xlab = "Puntuación", horizontal = TRUE)
 
