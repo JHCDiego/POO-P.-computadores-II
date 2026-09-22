@@ -1,4 +1,4 @@
-//Programa sujeto a derechos de autor. Juan Diego Herrera Castellar//
+//Juan Diego Herrera Castellar//
 
 //MÉTODO ITERATIVO DE GAUSS-SEIDEL//
 /*Nota: Debe ingresar los coeficientes y los términos independientes
