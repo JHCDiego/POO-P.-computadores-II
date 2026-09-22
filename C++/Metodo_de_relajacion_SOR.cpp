@@ -1,4 +1,4 @@
-//Programa sujeto a derechos de autor. Juan Diego Herrera Castellar//
+//Juan Diego Herrera Castellar//
 
 //MÉTODO DE RELAJACIÓN (SOR) CON ITERACIONES DE GAUSS-SEIDEL//
 /*Nota: Debe ingresar los coeficientes y los términos independientes
